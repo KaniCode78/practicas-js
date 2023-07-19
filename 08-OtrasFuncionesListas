@@ -1,0 +1,48 @@
+//defininicion de una lista con tipo alfanumerico
+const ciudadesDisponibles = new Array("Bogota", "Lima", "Santiago","montevideo");
+console.log(ciudadesDisponibles);
+
+//Definicion de una lista de forma abreviada
+
+const paisesDisponibles = ["Colombia", "Peru", "Chile", "Brazil", "Argentina", "Uruguay","Venezuela"];
+console.log(paisesDisponibles);
+
+
+const cantidadCiudades = ciudadesDisponibles.length;
+
+console.log(`en la lista de ciudades tenemos ${cantidadCiudades} elementos`);
+console.log(`en la lista de paises tenemos ${paisesDisponibles.length} elementos`);
+
+
+//remover el primer elemento
+ciudadesDisponibles.shift();
+console.log(ciudadesDisponibles);
+console.log(`en la lista de ciudades tenemos ${cantidadCiudades.length} elementos`);
+
+//remover el ultimo elemento
+ciudadesDisponibles.pop();
+console.log(ciudadesDisponibles);
+console.log(`en la lista de ciudades tenemos ${cantidadCiudades.length} elementos`);
+
+//filtro de elementos de la lista
+
+const pasiesFiltrados = paisesDisponibles.filter((e)=> e.length > 6);
+console.log(pasiesFiltrados);
+
+//unificar los elementos en una cadena de cadena de caracteres
+console.log(paisesDisponibles.join('-'));
+
+// ordenar la lista
+console.log(paisesDisponibles.sort());
+
+//conociendo la posicion
+
+console.log(`peru esta en la posicion: ${paisesDisponibles.indexOf(`peru`)}`);
+
+
+//unificar dos listas
+
+const listasPaisesYCiudades = paisesDisponibles.concat(ciudadesDisponibles);
+
+console.log(listasPaisesYCiudades);
+

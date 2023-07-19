@@ -28,7 +28,7 @@ console.log(paisesDisponibles);
 console.log(paisesDisponibles[0]);
 console.log(ciudadesDisponibles[1]);
 
-paisesDisponibles.splice(1,2,'Venezuela','Mexico');
+paisesDisponibles.splice(1,2,'Canada','Mexico');
 console.log(paisesDisponibles);
 
 
